@@ -1,24 +1,87 @@
 /********** Template CSS **********/
 :root {
-    --danger: #cc0606a8;
+    --danger: #540303a8;
     --light: #F0FBFC;
     --dark: #181d38;
 }
 
+/* body{
+    background-color: #CCCCCC;
+} */
+
 .fw-medium {
     font-weight: 600 !important;
 }
+h2{
+    color: #af3641 !important;
+}
+h4{
+    font-size: 30px;
+}
 
+.logo{
+    border-radius: 50%;
+}
+h3.titulo-home{
+    font-family: cursive;
+    color: #af3641;
+    font-size: 50px;
+}
+div.detalle{
+    margin: 50px;
+}
+p.descripcion-home{
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 20px;
+}
 .fw-semi-bold {
     font-weight: 700 !important;
 }
+div.seccion-servicios{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.home{
+    display: flex;
+    margin-top: 20px;
+}
+.home div.imagen{
+    border-radius: 15px;
+    border: solid 6px #af3641;
+}
+.imagen-home{
+    border-radius: 8px;
+}
+.Servicios{
+    display: flex;
+    /* height: 140px; */
+    padding: 30px;
+}
+.img-relojs{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    width: 250px;
+    padding: 15px;
+}
 
+.reloj-icon, .ambulancia-icon, .casa-icon,.venta-icon,.jeringa-icon{
+    font-size: 80px;
+    color: #af3641;
+}
 .back-to-top {
     position: fixed;
     display: none;
     right: 45px;
     bottom: 45px;
     z-index: 99;
+}
+.guardia-medica,.ambulancia-medica,.visitas-domiciliaria{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: 5px;
 }
 
 
@@ -216,7 +279,7 @@
 .section-title {
     position: relative;
     display: inline-block;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .section-title::before {
@@ -226,7 +289,7 @@
     height: 2px;
     top: 4px;
     left: -40px;
-    background: var(--danger);
+    background: var(--dark);
     z-index: -1;
 }
 
@@ -237,7 +300,7 @@
     height: 2px;
     bottom: 5px;
     left: -60px;
-    background: var(--danger);
+    background: var(--dark);
     z-index: -1;
 }
 
