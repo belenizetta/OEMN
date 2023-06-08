@@ -85,7 +85,8 @@
     </nav>
     <!-- Navbar End -->
     <!-- Imagen de home -->
-        <div class="container home">
+    <div class="owl-carousel header-carousel position-relative carusel-home">
+        <div class="container home ">
             <div class="imagen">
                 <img class="imagen-home" src="img/imghome.jpeg" alt="">
             </div>
@@ -95,15 +96,28 @@
                 <p class="descripcion-home">"PerroFeliz" es una compañía fundada por Gerardo Moreno después de experimentar dificultades para encontrar una clínica veterinaria abierta cuando necesitaba atención para su perro, Bombón.</p>
             </div>
         </div>
+        <div class="container home ">
+            <div class="imagen">
+                <img class="imagen-home" src="img/imghome.jpeg" alt="">
+            </div>
+            <div class="detalle">
+                <!-- <h1 class="titulo-home">Veterinaria Perro Feliz</h1> -->
+                <h3 class="titulo-home">La vida es mejor con una mascota feliz a tu lado</h3>
+                <p class="descripcion-home">"PerroFeliz" es una compañía fundada por Gerardo Moreno después de experimentar dificultades para encontrar una clínica veterinaria abierta cuando necesitaba atención para su perro, Bombón.</p>
+            </div>
+        </div>
+        
+    </div>
     <!--Fin Imagen home-->
 
     <!-- Seccion Te ofrecemos -->
     <div class="container seccion-servicios">
         <div class="text-center">
+            
             <h4 class="section-title bg-white text-center px-3">Te Ofrecemos</h4>
         </div>
         <div class="Servicios">
-            <div class="img-relojs">
+            <div class="img-relojs fadeInUp" style="animation-delay: 0.1s; animation-name: fadeInUp;">
                 <i class="fa-solid fa-clock-rotate-left reloj-icon"></i>
                 <span class="guardia-medica"> Guardia médica las 24hs</span>
             </div>
@@ -125,44 +139,74 @@
             </div>
         </div>
     </div>
-    <!-- Fin Seccion Te ofrecemos-->
-
-    <!-- Carousel Start -->
-    <!-- <div class="container-fluid p-0 mb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/img1.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h1 class="text-danger text-uppercase mb-3 animated slideInDown">Veterinaria Perro Feliz</h1>
-                                <h3 class="display-3 text-white animated slideInDown">La vida es mejor con una mascota feliz a tu lado</h3>
-                                <p class="fs-5 text-white mb-4 pb-2">"PerroFeliz" es una compañía fundada por Gerardo Moreno después de experimentar dificultades para encontrar una clínica veterinaria abierta cuando necesitaba atención para su perro, Bombón.</p>
-                            </div>
-                        </div>
+    <!-- Fin Seccion Te ofrecemos-->    
+    <!-- Testimonial Start -->
+    <div class="container-xxl wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="mb-5">¡Observá los que nuestros clientes dicen!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/comentario1.webp" style="width: 100px; height: 100px;">
+                    <h5>Olga dueña de Guardian</h5>
+                    <p class="mb-0">Lavado Perro Feliz</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Estoy muy contenta con el servicio de baño de mi perro que recibí aquí. Desde el momento en que entré, me sentí bienvenido y mi perro fue tratado con cariño y respeto. El personal es amable y profesional. Mi perro salió oliendo increíblemente bien y su pelaje estaba suave y brillante.</p>
                     </div>
                 </div>
-            </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/img1.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h1 class="text-danger text-uppercase mb-3 animated slideInDown">Veterinaria Perro Feliz</h1>
-                                <h3 class="display-3 text-white animated slideInDown">La vida es mejor con una mascota feliz a tu lado</h3>
-                                <p class="fs-5 text-white mb-4 pb-2">Tiene 5 establecimientos en la area metropolitana y con planes de añadir 3 mas para el siguiente año.
-                                </p>
-                            </div>
-                        </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/comentario3.jpeg" style="width: 100px; height: 100px;">
+                    <h5>Gustavo dueño de Manchita</h5>
+                    <p class="mb-0">Tratamiento antipulgas Perro Feliz</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">El tratamiento antipulgas para mi perro aquí fue increíble! Las pulgas desaparecieron rápidamente después del tratamiento y el personal fue muy profesional. Lo recomiendo encarecidamente.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/comentario7.jpeg" style="width: 100px; height: 100px;">
+                    <h5>Sergio dueño de Pipa</h5>
+                    <p class="mb-0">Lavado a Mano</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">El servicio de lavado a mano de mi perro aquí fue increíble. El personal fue amable y mi perro salió oliendo muy bien y su pelaje estaba brillante. ¡Volveré!</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/comentario4.jpeg" style="width: 100px; height: 100px;">
+                    <h5>Belen dueña de Luci</h5>
+                    <p class="mb-0">Tratamiento Manual antipulgas</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Excelente servicio manual de tratamiento antipulgas. Personal muy profesional y eficiente. Mi perro está libre de pulgas y su pelaje está brillante y suave. ¡Muy recomendable!"</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/comentario2 (1).jpeg" style="width: 100px; height: 100px;">
+                    <h5>Rodrigo dueño de Key</h5>
+                    <p class="mb-0">Corte de Pelo</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">El servicio de corte de pelo para mi perro aquí fue excelente. El personal fue muy amable y el corte de pelo fue perfecto. Mi perro se veía genial y su pelaje estaba suave y brillante. Definitivamente volveré a llevar a mi perro aquí y lo recomendaré a otros dueños de mascotas.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/comentario6.jpeg" style="width: 100px; height: 100px;">
+                    <h5>Josegina dueña de Pakum</h5>
+                    <p class="mb-0">Tinte de Pelo</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Estoy muy contento con el servicio de tinte de pelo para mi perro. El personal fue muy amable y profesional, y me aseguraron que la tintura que utilizaron era no dañina y hipoalergénica. Mi perro se veía tan lindo después del servicio, y su pelaje seguía siendo suave y brillante. Definitivamente volveré y recomendaré este lugar a otros dueños de mascotas preocupados por la seguridad de sus perros.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/comentario5.jpeg" style="width: 100px; height: 100px;">
+                    <h5>Horacio dueño de Coqui</h5>
+                    <p class="mb-0">Limpieza dental</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">El servicio de limpieza dental para mi perro aquí fue excelente. El personal fue muy amable y profesional, y la limpieza dental se realizó sin dolor para mi perro. Sus dientes estaban mucho más limpios y blancos después del tratamiento, y me tranquiliza saber que su salud bucal está en buenas manos. Definitivamente volveré a llevar a mi perro aquí para futuros tratamientos de limpieza dental.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
-    <!-- Carousel End -->
-       
+    </div>
+    <!-- Testimonial End -->   
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">

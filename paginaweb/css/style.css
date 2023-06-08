@@ -44,7 +44,17 @@ div.seccion-servicios{
 }
 .home{
     display: flex;
-    margin-top: 20px;
+    margin-top: 50px;
+    box-shadow: #181d38;
+    box-shadow: 0px 2px 11px 6px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.carusel-home{
+    padding: 10px;
 }
 .home div.imagen{
     border-radius: 15px;
@@ -64,6 +74,9 @@ div.seccion-servicios{
     justify-content: center;
     width: 250px;
     padding: 15px;
+    border: solid;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 .reloj-icon, .ambulancia-icon, .casa-icon,.venta-icon,.jeringa-icon{
