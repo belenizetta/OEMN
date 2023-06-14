@@ -79,9 +79,24 @@ div.seccion-servicios{
     margin: 5px;
 }
 
+.img-relojs:hover {
+    background-color: #af3641;
+    margin-top: -10px;
+    color: #FFFFFF;
+}
+
+.img-relojs:hover *{
+    background-color: #af3641;
+    color: #FFFFFF;
+}
+
 .reloj-icon, .ambulancia-icon, .casa-icon,.venta-icon,.jeringa-icon{
     font-size: 80px;
     color: #af3641;
+}
+
+.reloj-icon:hover, .ambulancia-icon:hover, .casa-icon:hover,.venta-icon:hover,.jeringa-icon:hover{
+    color: #FFFFFF;
 }
 .back-to-top {
     position: fixed;
@@ -330,13 +345,15 @@ div.seccion-servicios{
 
 /*** Service ***/
 .service-item {
-    background: var(--light);
+    /* background: ; */
+    border: solid 2px #181d38;
+    border-radius: 20px;
     transition: .5s;
 }
 
 .service-item:hover {
     margin-top: -10px;
-    background: var(--danger);
+    background: #af3641;
 }
 
 .service-item * {
@@ -347,7 +364,54 @@ div.seccion-servicios{
     color: var(--light) !important;
 }
 
+.block-mv{
+    padding: 20px;
+}
 
+.text-mv{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.valores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.paw-icon{
+    color: #af3641;
+    font-size: 25px;
+}
+
+h4.clas-valores{
+    text-align: center;
+    font-weight: 800;
+    font-size: 35px;
+}
+.copasion img, .integridad img, .colaboracion img{
+    padding-bottom: 20px;
+}
+
+.container-val{
+    margin-bottom: 20px;
+}
+.title-valores{
+    font-family: sans-serif;
+    color: #af3641;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.accordion-button{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.title-valores i.paw-icon{
+    font-size: 50px;
+}
 /*** Categories & Courses ***/
 .category img,
 .course-item img {
@@ -442,7 +506,110 @@ div.seccion-servicios{
     border-color: var(--danger);
 }
 
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+    margin-bottom: 80px;
+}
 
+.card-category {
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	gap: 2rem;
+}
+
+.card-category p {
+	font-size: 25px;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.card-category p::after {
+	content: '';
+	width: 2.5rem;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.card-category span {
+	font-size: 1.6rem;
+	color: #fff;
+	cursor: pointer;
+}
+
+.card-category span:hover {
+    color: darksalmon;
+}
+
+.category-lavado, .category-tratamiento, .category-lvmano, .category-tmanual, .category-corte, .category-tinte, .category-limpieza, .category-nada {
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.category-lavado {
+	background-image: linear-gradient(#8d050580, #68050580),
+		url('../img/lavado.avif');
+}
+
+.category-tratamiento {
+	background-image: linear-gradient(#8d050580, #68050580),
+		url('../img/lavado.avif');
+}
+
+.category-lvmano {
+	background-image: linear-gradient(#8d050580, #68050580),
+		url('../img/lavado.avif');
+}
+
+.category-tmanual {
+	background-image: linear-gradient(#8d050580, #68050580),
+		url('../img/lavado.avif');
+}
+
+.category-corte {
+	background-image: linear-gradient(#8d050580, #68050580),
+		url('../img/lavado.avif');
+}
+
+.category-tinte {
+	background-image: linear-gradient(#8d050580, #68050580),
+		url('../img/lavado.avif');
+}
+
+.category-limpieza {
+	background-image: linear-gradient(#8d050580, #68050580),
+		url('../img/lavado.avif');
+}
+
+@media (max-width: 768px) {
+    .card-category {
+		height: 12rem;
+	}
+
+	.card-category p {
+		font-size: 2rem;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.card-category span {
+		font-size: 1.4rem;
+	} 
+}
 /*** Footer ***/
 .footer .btn.btn-social {
     margin-right: 5px;
